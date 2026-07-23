@@ -13,13 +13,31 @@ Windows
 Atode:
 cargo generate esp-rs/esp-idf-template
 cargo build
-cargo add iroh
+
 
 
 packages:
-rustup
-gcc
+  rustup
+  # Core Compilers and Build Tools
+  gcc
+  gnumake
+  binutils
+  coreutils
 
+  # Headers & Libraries
+  glibc
+  glibc.dev
+
+  # Common Build Automations
+  pkg-config
+  autoconf
+  automake
+  libtool
+  cmake
+
+  # Essential Utilities
+  git
+  wget
 
 
   Blacklist NVIDIA and Nouveau modules so the kernel never loads them
